@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp"
+    android:paddingEnd="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/bus_no"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#1F1F1F"
+                android:textSize="25sp"
+                android:text="1号"
+                android:drawableStart="@drawable/bus_info_list_bus"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/capacity"
+                android:layout_width="100dp"
+                android:layout_toRightOf="@id/bus_no"
+                android:layout_height="wrap_content"
+                android:text="(101人)"
+                android:textSize="25sp"
+                android:textColor="#1F1F1F"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/minute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#1F1F1F"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="5分钟到达"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#1F1F1F"
+            android:textSize="25sp"
+            android:layout_weight="4"
+            android:text="距离站台100米"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1.2dp"
+        android:background="@drawable/dash_line"/>
+
+</LinearLayout>

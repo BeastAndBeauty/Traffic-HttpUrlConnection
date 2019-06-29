@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.RoadStatusFragment">
+
+    <ImageView
+        android:id="@+id/back_ground"
+        android:layout_width="750dp"
+        android:layout_height="671dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/load_statu"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/huangchegnlu2"
+        android:layout_width="605dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="35dp"
+        android:text="环城快速路"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/huangchenglu1"
+        android:layout_width="28dp"
+        android:layout_height="569dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="环城快速路" />
+
+    <TextView
+        android:id="@+id/xueyuanlu"
+        android:layout_width="27dp"
+        android:layout_height="267dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="54dp"
+        android:text="学院路"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/lianxianglu"
+        android:layout_width="21dp"
+        android:layout_height="263dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="364dp"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="联想路" />
+
+    <TextView
+        android:id="@+id/xinfulu"
+        android:layout_width="27dp"
+        android:layout_height="269dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="214dp"
+        android:layout_marginBottom="53dp"
+        android:gravity="center"
+        android:text="幸福路" />
+
+    <TextView
+        android:id="@+id/yiyuanlu"
+        android:layout_width="22dp"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="365dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="医院路" />
+
+    <TextView
+        android:id="@+id/huangchenglu3"
+        android:layout_width="598dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yiyuanlu"
+        android:layout_marginTop="-52dp"
+        android:layout_toEndOf="@+id/huangchenglu1"
+        android:gravity="center"
+        android:text="环城快速路" />
+
+    <TextView
+        android:id="@+id/huangchentggaosulu"
+        android:layout_width="17dp"
+        android:layout_height="567dp"
+        android:layout_below="@+id/huangchegnlu2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="595dp"
+        android:gravity="center"
+        android:text="环城高速" />
+
+    <TextView
+        android:id="@+id/tingchechang"
+        android:layout_width="101dp"
+        android:layout_height="177dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="478dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center"
+        android:text="停车场" />
+
+    <RelativeLayout
+        android:layout_width="553dp"
+        android:layout_height="219dp"
+        android:layout_marginLeft="-23dp"
+        android:layout_toRightOf="@id/back_ground"
+        android:background="#FFDDDEE0">
+
+        <ImageView
+            android:id="@+id/image_reflesh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/life_assist_refresh" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:text="2017-6-7"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="星期三"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/date"
+            android:text="温度："
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/temperature"
+            android:text="17°"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperature_value"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/today"
+            android:text="相对湿度："
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperature_value"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/humidity"
+            android:text="58%"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidity"
+            android:layout_alignRight="@id/humidity"
+            android:layout_marginTop="20dp"
+            android:text="PM2.5："
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/pm_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidity_value"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/pm"
+            android:text="29ug/m3"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="551dp"
+        android:layout_height="450dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/road_status_2" />
+
+</RelativeLayout>

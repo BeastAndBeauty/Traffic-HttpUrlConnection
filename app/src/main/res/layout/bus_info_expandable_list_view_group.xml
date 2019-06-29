@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:paddingStart="20dp">
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bus_info_indicator_right"/>
+
+    <TextView
+        android:id="@+id/bus_station"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:textColor="#1F1F1F"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/indicator"
+        android:text="中医院站"/>
+
+</RelativeLayout>

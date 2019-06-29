@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LifeAssistFragment">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <TextView
+                    android:id="@+id/show_now_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19°"
+                    android:textColor="#FF3F51B4"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/show_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/show_now_temperature"
+                    android:textSize="25sp"
+                    android:text="今天："
+                    android:textColor="#FF3F51B4" />
+
+                <TextView
+                    android:id="@+id/temperature_min_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/show_now_temperature"
+                    android:layout_toEndOf="@id/show_date"
+                    android:text="12-24  ℃"
+                    android:textSize="25sp"
+                    android:textColor="#FF3F51B4" />
+
+                <ImageView
+                    android:id="@+id/image_reflesh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_toRightOf="@id/temperature_min_max"
+                    android:src="@drawable/life_assist_refresh" />
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="600dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <!--今日生活指数-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="今日生活指数"
+                android:textColor="#FF3D8ECA"
+                android:textSize="30sp" />
+
+            <include
+                layout="@layout/fragment_life_assist_today_life_index"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <!-- 整点天气实况-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="整点天气实况"
+                android:textColor="#FF3D8ECA"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/life_assist_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_point_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingTop="530dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_airQuality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@drawable/rectangle_text_view"
+                        android:text="空气质量" />
+
+                    <TextView
+                        android:id="@+id/text_temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:text="温度" />
+
+                    <TextView
+                        android:id="@+id/text_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:text="相对湿度" />
+
+                    <TextView
+                        android:id="@+id/text_carbonDioxide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:text="二氧化碳" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</ScrollView>

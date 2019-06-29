@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFD6D6D6"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="公交车载客情况统计"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_marginStart="25dp"
+        android:layout_height="wrap_content"
+        android:padding="6.5dip">
+
+    <TableRow
+        android:paddingLeft="0.5dip"
+        android:paddingRight="0.5dip"
+        android:paddingTop="1dip"
+        android:background="#FF797979">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0.5dip"
+            android:layout_marginLeft="0.5dip"
+            android:gravity="center"
+            android:textColor="#FF4F4F4F"
+            android:background="#FFF9F9F9"
+            android:text="序号"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0.5dip"
+            android:layout_marginLeft="0.5dip"
+            android:gravity="center"
+            android:textColor="#FF4F4F4F"
+            android:background="#FFF9F9F9"
+            android:text="公交车编号"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0.5dip"
+            android:layout_marginLeft="0.5dip"
+            android:background="#FFF9F9F9"
+            android:textColor="#FF4F4F4F"
+            android:gravity="center"
+            android:text="承载人数"/>
+
+    </TableRow>
+
+        <ListView
+            android:id="@+id/dialog_listView"
+            android:layout_height="485dp"
+            android:focusable="true"/>
+
+        <TableRow
+            android:paddingLeft="0.5dip"
+            android:paddingRight="0.5dip"
+            android:paddingTop="1dip"
+            android:background="#FF797979">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:layout_marginBottom="0.5dip"
+                android:layout_marginLeft="0.5dip"
+                android:gravity="center"
+                android:textColor="#FF4F4F4F"
+                android:background="#FFF9F9F9"
+                android:text="合计"/>
+
+            <TextView
+                android:id="@+id/dialog_total_capacity"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0.5dip"
+                android:layout_marginLeft="0.5dip"
+                android:background="#FFF9F9F9"
+                android:textColor="#FF4F4F4F"
+                android:gravity="center"
+                android:text="1211"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/dialog_back"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="返回"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FFCBCBCB"/>
+
+</LinearLayout>

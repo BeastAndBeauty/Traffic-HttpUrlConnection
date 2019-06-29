@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFD9ECFE"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/XRay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FF3D8ECA"
+            android:drawableTop="@drawable/life_assist_sun"
+            android:textSize="20sp"
+            android:text="紫外线指数"/>
+
+        <TextView
+            android:id="@+id/XRay_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/XRay"
+            android:text="中等(100)"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/XRay_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/XRay_index"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/XRay"
+            android:textSize="18sp"
+            android:ellipsize="none"
+            android:maxEms="5"
+            android:text="涂擦SPF大于15，PA+防晒护肤品。"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFD9ECFE"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/cold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/life_assist_capsule"
+            android:text="感冒指数"/>
+
+        <TextView
+            android:id="@+id/cold_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/cold"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:text="较易发(5)"/>
+
+        <TextView
+            android:id="@+id/cold_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cold_index"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/cold"
+            android:textSize="18sp"
+            android:ellipsize="none"
+            android:maxEms="5"
+            android:text="风较大，较易发生感冒，注意防护。"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFD9ECFE"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/life_assist_clothes"
+            android:text="穿衣指数"/>
+
+        <TextView
+            android:id="@+id/clothes_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/clothes"
+            android:text="舒适(100)"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#FF3D8ECA" />
+
+        <TextView
+            android:id="@+id/clothes_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/clothes_index"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/clothes"
+            android:textSize="18sp"
+            android:ellipsize="none"
+            android:maxEms="5"
+            android:text="建议穿长袖衬衫单裤等服装。"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFD9ECFE"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/life_assist_basketball"
+            android:text="运动指数"/>
+
+        <TextView
+            android:id="@+id/sport_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sport"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF3D8ECA"
+            android:text="较适宜(21)"/>
+
+        <TextView
+            android:id="@+id/sport_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sport_index"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/sport"
+            android:textSize="18sp"
+            android:ellipsize="none"
+            android:maxEms="5"
+            android:text="风力稍强，推荐您进行室内活动。"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFD9ECFE"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/air"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/life_assist_cloud"
+            android:maxEms="5"
+            android:text="空气污染物扩散指数"/>
+
+        <TextView
+            android:id="@+id/air_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/air"
+            android:textColor="#FF3D8ECA"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:text="良(10)"/>
+
+        <TextView
+            android:id="@+id/air_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/air_index"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/air"
+            android:textSize="18sp"
+            android:ellipsize="none"
+            android:maxEms="5"
+            android:text="气象条件有利于空气污染物扩散。"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
